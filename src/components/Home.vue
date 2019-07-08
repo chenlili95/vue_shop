@@ -8,7 +8,10 @@
 export default {
   methods: {
     logout() {
+      // 清空sessionStorage的token
       window.sessionStorage.clear()
+
+      //跳转到登录页面
       this.$router.push('/login')
     }
   }
