@@ -92,7 +92,7 @@ export default {
     async getMenuList() {
       // 发送请求，获取菜单列表
       const { data: res } = await this.$http.get('menus')
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
 
       // 获取列表成功，将请求的数据保存到menuList中
